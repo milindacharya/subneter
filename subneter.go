@@ -20,11 +20,7 @@ func CidrToSubneter(s string) (*Subneter, error) {
 	if err != nil {
 		return nil, err
 	}
-
-	isValidCidr
-
 	return calcSubneter(sn), nil
-
 }
 
 // given a subnet, get the network id, broadcast address, first and last ip
