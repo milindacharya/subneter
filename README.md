@@ -13,8 +13,12 @@ Given a cidr address, it calculates
 
 Given an IP, assists
 
-- to divide it into x number of networks with y number of hosts
+- to divide it into x number of networks
+- to divide it further so that each sub-network has n hosts
+- optimally divide it into x number of networks with y number of hosts
 - gives a list of all possible division of subnets with a given IP
+
+Given a list of ip addreses, summarize them
 
 ## Command line usage
 
