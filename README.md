@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.com/milindacharya/subneter.svg?token=Wyb8SqqCcFJVfPuSPGUZ&branch=master)](https://travis-ci.com/milindacharya/subneter)
 [![Go doc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://godoc.org/github.com/milindacharya/subneter)
+![MIT License](https://img.shields.io/github/license/milindacharya/subneter.svg)
 [![Go Report Card](https://goreportcard.com/badge/github.com/milindacharya/subneter)](https://goreportcard.com/report/github.com/milindacharya/subneter)
 [![codecov](https://codecov.io/gh/milindacharya/subneter/branch/master/graph/badge.svg)](https://codecov.io/gh/milindacharya/subneter)
 
