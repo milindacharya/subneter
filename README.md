@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/milindacharya/subneter.svg?token=Wyb8SqqCcFJVfPuSPGUZ&branch=master)](https://travis-ci.com/milindacharya/subneter)
+
 # Subneter
 
 Library for IPv4 Subnetting
