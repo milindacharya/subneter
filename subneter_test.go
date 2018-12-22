@@ -1,15 +1,10 @@
 package subneter
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
 )
-
-func TestSomething(t *testing.T) {
-	fmt.Println("Hello")
-}
 
 func Test_getFirstLast(t *testing.T) {
 	tests := []struct {
@@ -19,9 +14,14 @@ func Test_getFirstLast(t *testing.T) {
 		f    uint8
 		l    uint8
 	}{
-		{"0", 201, 1, 128, 255},
-		{"1", 201, 2, 128, 255},
-		{"2", 20, 2, 0, 255},
+		{"1", 14, 1, 0, 127},
+		{"2", 14, 2, 0, 63},
+		{"3", 14, 3, 0, 31},
+		{"4", 14, 4, 0, 15},
+		{"5", 14, 5, 8, 15},
+		{"6", 14, 6, 12, 15},
+		{"7", 14, 7, 14, 15},
+		{"8", 14, 8, 14, 14},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
