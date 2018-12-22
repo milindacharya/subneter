@@ -1,6 +1,6 @@
 # Subneter
 
-Library for IPv4 and IPv6 Subnetting
+Library for IPv4 Subnetting
 
 ## What does it do?
 
@@ -11,7 +11,7 @@ Given a cidr address, it calculates
 - Last usable IP
 - Broadcast address
 
-```
+```go
 package main
 
 import (
@@ -36,30 +36,12 @@ Last Host: 192.168.1.126
 Broadcast Address: 192.168.1.127
 ```
 
+### More to come... (work in progress)
 
-Given an IP, assists
+- Given a subnet 
+    - return all possible subnets with same network mask
+    - divide it further into subnets to have x number of hosts per subnet
+    - divide it into y number of networks
+    - optimally divide it into x number of networks with y number of hosts if possible 
 
-- to divide it into x number of networks
-- to divide it further so that each sub-network has n hosts
-- optimally divide it into x number of networks with y number of hosts
-- gives a list of all possible division of subnets with a given IP
-
-Given a list of ip addreses, summarize them
-
-## Command line usage
-
-IPv4 examples
-
-```
-subneter -cidr 192.168.1.129/25
-subneter -ipv4 192.168.1.129 -hosts 12 -networks 2
-```
-
-IPv6 examples
-
-```
-subneter -
-subneter
-```
-
-## API
+- IPv6 support
