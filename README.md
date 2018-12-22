@@ -11,6 +11,32 @@ Given a cidr address, it calculates
 - Last usable IP
 - Broadcast address
 
+```
+package main
+
+import (
+	"fmt"
+	"github.com/milindacharya/subneter"
+)
+
+func main() {
+	s, _ := subneter.CidrToSubneter("192.168.1.15/25")
+	fmt.Printf("Network Address: %s\n",s.NetworkID)
+	fmt.Printf("First Host: %s\n",s.FirstHost)
+	fmt.Printf("Last Host: %s\n",s.LastHost)
+	fmt.Printf("Broadcast Address: %s\n",s.BroadcastIP)
+}
+
+```
+Output is 
+```
+Network Address: 192.168.1.0
+First Host: 192.168.1.1
+Last Host: 192.168.1.126
+Broadcast Address: 192.168.1.127
+```
+
+
 Given an IP, assists
 
 - to divide it into x number of networks
